@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LoraTracker"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_BUILD_VERBOSE">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD_VERBOSE"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LoraTracker">
+				<Option output="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/LoraTracker" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/cores/samd"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/system/samd/CMSIS/CMSIS/Include"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/system/samd/CMSIS-Atmel/CMSIS/Device/ATMEL"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/variants/arduino_zero"/>
+					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/LoRaWan"/>
+					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/src"/>
+					<Add directory="/Users/stephanbrunner/.platformio/lib/TimerOne_ID131"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/HID"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/I2S/src"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/SAMD_AnalogCorrection/src"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/SDU/src"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/SPI"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/USBHost/src"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/Wire"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/4.8.4"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/4.8.4/arm-none-eabi"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/4.8.4/include"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/4.8.4/include-fixed"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/tool-unity"/>
+					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/include"/>
+					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 LoraTracker"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LoraTracker/fast">
+				<Option output="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/LoraTracker" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/cores/samd"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/system/samd/CMSIS/CMSIS/Include"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/system/samd/CMSIS-Atmel/CMSIS/Device/ATMEL"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/variants/arduino_zero"/>
+					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/LoRaWan"/>
+					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/src"/>
+					<Add directory="/Users/stephanbrunner/.platformio/lib/TimerOne_ID131"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/HID"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/I2S/src"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/SAMD_AnalogCorrection/src"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/SDU/src"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/SPI"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/USBHost/src"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/Wire"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/4.8.4"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/4.8.4/arm-none-eabi"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/4.8.4/include"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/4.8.4/include-fixed"/>
+					<Add directory="/Users/stephanbrunner/.platformio/packages/tool-unity"/>
+					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/include"/>
+					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 LoraTracker/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_REBUILD_PROJECT_INDEX">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_PROGRAM">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPDATE_ALL">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPLOADFS">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_TEST">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPLOAD">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_CLEAN">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_BUILD">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_MONITOR">
+				<Option working_dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_MONITOR"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/stephanbrunner/Documents/1_Projekte/Software\ Devlopement/LoraTracker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/.DS_Store">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/LoRaWan/LoRaWan.cpp">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/LoRaWan/LoRaWan.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/examples/BasicExample/BasicExample.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/examples/DeviceExample/DeviceExample.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/examples/FullExample/FullExample.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/examples/KitchenSink/KitchenSink.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/examples/SatElevTracker/SatElevTracker.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/examples/SatElevTracker/sample_satellite_elevation_log.txt">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/examples/SatelliteTracker/SatelliteTracker.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/examples/UsingCustomFields/UsingCustomFields.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/keywords.txt">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/library.json">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/library.properties">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/src/TinyGPS++.cpp">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/src/TinyGPS++.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/src/LoraTracker.cpp">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/CMakeListsPrivate.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
