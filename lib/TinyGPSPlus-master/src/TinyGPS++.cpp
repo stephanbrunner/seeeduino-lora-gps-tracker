@@ -31,6 +31,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define _GPGGAterm   "GPGGA"
 #define _GNRMCterm   "GNRMC"
 #define _GNGGAterm   "GNGGA"
+#define _PMTK001term "PMTK001"
 
 TinyGPSPlus::TinyGPSPlus()
   :  parity(0)
@@ -190,6 +191,9 @@ bool TinyGPSPlus::endOfTermHandler()
         satellites.commit();
         hdop.commit();
         break;
+      case GPS_SENTENCE_PMTK001:
+        response.commit();
+        break;
       }
 
       // Commit all custom listeners of this sentence type
@@ -213,6 +217,8 @@ bool TinyGPSPlus::endOfTermHandler()
       curSentenceType = GPS_SENTENCE_GPRMC;
     else if (!strcmp(term, _GPGGAterm) || !strcmp(term, _GNGGAterm))
       curSentenceType = GPS_SENTENCE_GPGGA;
+    else if (!strcmp(term, _PMTK001term))
+      curSentenceType =GPS_SENTENCE_PMTK001;
     else
       curSentenceType = GPS_SENTENCE_OTHER;
 
@@ -270,6 +276,9 @@ bool TinyGPSPlus::endOfTermHandler()
       break;
     case COMBINE(GPS_SENTENCE_GPGGA, 9): // Altitude (GPGGA)
       altitude.set(term);
+      break;
+    case COMBINE(GPS_SENTENCE_PMTK001, 1):
+      response.set(term);
       break;
   }
 

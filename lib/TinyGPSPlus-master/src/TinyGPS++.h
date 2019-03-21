@@ -40,6 +40,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define _GPS_FEET_PER_METER 3.2808399
 #define _GPS_MAX_FIELD_SIZE 15
 
+#define _GPS_RESPONSE_STANDBY 161
+#define _GPS_RESPONSE_STARTUP 1
+#define _GPS_RESPONSE_AIDING_EPO 2
+
 struct RawDegrees
 {
    uint16_t deg;
@@ -189,6 +193,11 @@ struct TinyGPSHDOP : TinyGPSDecimal
    double hdop() { return value() / 100.0; }
 };
 
+struct TinyGPSCommandResponse : public TinyGPSInteger
+{
+
+};
+
 class TinyGPSPlus;
 class TinyGPSCustom
 {
@@ -231,6 +240,7 @@ public:
   TinyGPSAltitude altitude;
   TinyGPSInteger satellites;
   TinyGPSHDOP hdop;
+  TinyGPSCommandResponse response;
 
   static const char *libraryVersion() { return _GPS_VERSION; }
 
@@ -247,7 +257,7 @@ public:
   uint32_t passedChecksum()   const { return passedChecksumCount; }
 
 private:
-  enum {GPS_SENTENCE_GPGGA, GPS_SENTENCE_GPRMC, GPS_SENTENCE_OTHER};
+  enum {GPS_SENTENCE_GPGGA, GPS_SENTENCE_GPRMC, GPS_SENTENCE_PMTK001, GPS_SENTENCE_OTHER};
 
   // parsing state variables
   uint8_t parity;
