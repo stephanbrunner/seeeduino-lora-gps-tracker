@@ -754,6 +754,7 @@ bool LoRaWanClass::setOTAAJoin(_otaa_join_cmd_t command, unsigned char timeout)
       }
 
       SerialUSB.print("Result didn't match anything I expected.\n");
+      break;
     }    
 
     SerialUSB.print("Done with Join\n");

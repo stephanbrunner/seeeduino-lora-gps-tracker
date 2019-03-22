@@ -92,15 +92,15 @@ void displayInfo() {
 
     if (gps.course.isUpdated()) {
         SerialUSB.print("Course: ");
-        Serial.println(gps.course.deg());
+        SerialUSB.println(gps.course.deg());
         allUpdated |= 1 << COURSE_UPDATED;
     }
 
     if (gps.hdop.isUpdated()) {
         SerialUSB.print("Hdop: ");
-        Serial.print(gps.hdop.hdop());
-        Serial.print("/");
-        Serial.println(gps.hdop.value());
+        SerialUSB.print(gps.hdop.hdop());
+        SerialUSB.print("/");
+        SerialUSB.println(gps.hdop.value());
         allUpdated |= 1 << HDOP_UPDATED;
     }
 
@@ -126,7 +126,50 @@ void setup() {
 
     // setup Lora
     lora.init();
-    lora.setDeviceReset();
+//    lora.setDeviceReset();
+    // give the lora chip some time to reset
+    delay(1000);
+    if (lora.setDeviceMode(LWOTAA)) {
+        SerialUSB.println("Set mode to OTAA.");
+    } else {
+        SerialUSB.println("Failed to set mode to OTAA.");
+    }
+    lora.setDataRate(DR3, EU868);
+    lora.setId(nullptr, "00AF354029FEE928", "70B3D57ED00198B1");
+    lora.setKey(nullptr, nullptr, "816AAFDFC2BA8EA8ECE4EB8A8C84DF63");
+//    lora.setChannel(0, 868.1);
+//    lora.setChannel(1, 868.3);
+//    lora.setChannel(2, 868.5);
+    lora.setReceiveWindowFirst(0, 868.1);
+    lora.setReceiveWindowSecond(869.525, DR3);
+//    lora.setDutyCycle(true);
+//    lora.setJoinDutyCycle(true);
+    lora.setPower(14);
+    lora.setAdaptiveDataRate(true);
+
+    while(!lora.setOTAAJoin(JOIN)){
+        SerialUSB.println("Connecting...") ;
+        for(int i=0; i<=3; i++){
+            digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+            delay(100);
+            digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+            delay(100);
+        }
+        digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+        delay(1000);
+    }
+    SerialUSB.println("Connected!");
+
+    while (1){
+        SerialUSB.println("Try sending...");
+
+        if (lora.transferPacket("testing", 10)){
+            SerialUSB.println("successfull");
+        } else {
+            SerialUSB.println("not able to send.");
+        }
+        delay(30000);
+    }
 
     // setup GPS
     Serial.begin(9600);     // open the GPS
@@ -138,6 +181,7 @@ void setup() {
 void loop() {
     // TODO handle invalid data
     // TODO handel case, when gps doesn't find no satellites
+    // TODO maybe look for a couple of positions after getting valid data
     // get chars from GPS and process them in TinyGPSPlus
     if (Serial.available() > 0) {
         char c = (char) Serial.read();
@@ -164,6 +208,9 @@ void loop() {
     }
 
     if (allUpdated == 0x00FF) {
+        // send data
+
+        // put gps in standby mode
         SerialUSB.println("Sending GPS to sleep.");
         Serial.print(GPS_COMMAND_STANDBY);
         gps_enabled_target_state = false;
