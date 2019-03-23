@@ -49,6 +49,7 @@
 					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/system/samd/CMSIS-Atmel/CMSIS/Device/ATMEL"/>
 					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/variants/arduino_zero"/>
 					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/LoRaWan"/>
+					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src"/>
 					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/src"/>
 					<Add directory="/Users/stephanbrunner/.platformio/lib/TimerOne_ID131"/>
 					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/HID"/>
@@ -92,6 +93,7 @@
 					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/system/samd/CMSIS-Atmel/CMSIS/Device/ATMEL"/>
 					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/variants/arduino_zero"/>
 					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/LoRaWan"/>
+					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src"/>
 					<Add directory="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/src"/>
 					<Add directory="/Users/stephanbrunner/.platformio/lib/TimerOne_ID131"/>
 					<Add directory="/Users/stephanbrunner/.platformio/packages/framework-arduinosam/libraries/__cores__/samd/HID"/>
@@ -233,6 +235,150 @@
 		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/LoRaWan/LoRaWan.h">
 			<Option target="LoraTracker"/>
 		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/.DS_Store">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/CONTRIBUTING.md">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/README.md">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/docs/CayenneLPP.md">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/docs/RN2903A-1.0.3-AU915.zip">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/docs/RN2903A-programming.docx">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/docs/RN2903A-uart-bootloader.docx">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/docs/TheThingsMessage.md">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/docs/TheThingsNetwork.md">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/CayenneLPP/CayenneLPP.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/DeviceInfo/DeviceInfo.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/PassThrough/PassThrough.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/QuickStart/Converter.js">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/QuickStart/Decoder.js">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/QuickStart/Encoder.js">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/QuickStart/QuickStart.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/QuickStart/Validator.js">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/Receive/Receive.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/SendABP/SendABP.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/SendOTAA/SendOTAA.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/Sensors/DHT/DHT.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/Sensors/LightSensor/LightSensor.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/TheThingsMessage/Receive/Receive.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/TheThingsMessage/Send/Send.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/examples/Workshop/Workshop.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/keywords.txt">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/library.properties">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/CayenneLPP.cpp">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/CayenneLPP.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/TheThingsMessage.cpp">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/TheThingsMessage.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/TheThingsNetwork.cpp">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/TheThingsNetwork.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/api/appData.proto">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/api/deviceData.proto">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/appData.pb.c">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/appData.pb.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/deviceData.pb.c">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/deviceData.pb.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_common.c">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_common.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_decode.c">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_decode.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_encode.c">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_encode.h">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/test/TheThingsMessage/TheThingsMessage.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/test/TheThingsNetwork/TheThingsNetwork.ino">
+			<Option target="LoraTracker"/>
+		</Unit>
 		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/examples/BasicExample/BasicExample.ino">
 			<Option target="LoraTracker"/>
 		</Unit>
@@ -264,6 +410,9 @@
 			<Option target="LoraTracker"/>
 		</Unit>
 		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/library.properties">
+			<Option target="LoraTracker"/>
+		</Unit>
+		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/src/.DS_Store">
 			<Option target="LoraTracker"/>
 		</Unit>
 		<Unit filename="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/src/TinyGPS++.cpp">

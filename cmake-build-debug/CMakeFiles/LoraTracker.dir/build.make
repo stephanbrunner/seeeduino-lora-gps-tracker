@@ -70,9 +70,113 @@ CMakeFiles/LoraTracker.dir/lib/LoRaWan/LoRaWan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LoraTracker.dir/lib/LoRaWan/LoRaWan.cpp.s"
 	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/LoRaWan/LoRaWan.cpp" -o CMakeFiles/LoraTracker.dir/lib/LoRaWan/LoRaWan.cpp.s
 
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.o: CMakeFiles/LoraTracker.dir/flags.make
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.o: ../lib/TheThingsNetwork/src/CayenneLPP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.o"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.o -c "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/CayenneLPP.cpp"
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.i"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/CayenneLPP.cpp" > CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.i
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.s"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/CayenneLPP.cpp" -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.s
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.o: CMakeFiles/LoraTracker.dir/flags.make
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.o: ../lib/TheThingsNetwork/src/TheThingsMessage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.o"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.o -c "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/TheThingsMessage.cpp"
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.i"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/TheThingsMessage.cpp" > CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.i
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.s"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/TheThingsMessage.cpp" -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.s
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.o: CMakeFiles/LoraTracker.dir/flags.make
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.o: ../lib/TheThingsNetwork/src/TheThingsNetwork.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.o"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.o -c "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/TheThingsNetwork.cpp"
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.i"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/TheThingsNetwork.cpp" > CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.i
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.s"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/TheThingsNetwork.cpp" -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.s
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.o: CMakeFiles/LoraTracker.dir/flags.make
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.o: ../lib/TheThingsNetwork/src/appData.pb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.o"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.o   -c "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/appData.pb.c"
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.i"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/appData.pb.c" > CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.i
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.s"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/appData.pb.c" -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.s
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.o: CMakeFiles/LoraTracker.dir/flags.make
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.o: ../lib/TheThingsNetwork/src/deviceData.pb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.o"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.o   -c "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/deviceData.pb.c"
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.i"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/deviceData.pb.c" > CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.i
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.s"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/deviceData.pb.c" -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.s
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.o: CMakeFiles/LoraTracker.dir/flags.make
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.o: ../lib/TheThingsNetwork/src/pb_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.o"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.o   -c "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_common.c"
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.i"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_common.c" > CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.i
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.s"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_common.c" -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.s
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.o: CMakeFiles/LoraTracker.dir/flags.make
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.o: ../lib/TheThingsNetwork/src/pb_decode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.o"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.o   -c "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_decode.c"
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.i"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_decode.c" > CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.i
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.s"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_decode.c" -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.s
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.o: CMakeFiles/LoraTracker.dir/flags.make
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.o: ../lib/TheThingsNetwork/src/pb_encode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.o"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.o   -c "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_encode.c"
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.i"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_encode.c" > CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.i
+
+CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.s"
+	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_encode.c" -o CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.s
+
 CMakeFiles/LoraTracker.dir/lib/TinyGPSPlus-master/src/TinyGPS++.cpp.o: CMakeFiles/LoraTracker.dir/flags.make
 CMakeFiles/LoraTracker.dir/lib/TinyGPSPlus-master/src/TinyGPS++.cpp.o: ../lib/TinyGPSPlus-master/src/TinyGPS++.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LoraTracker.dir/lib/TinyGPSPlus-master/src/TinyGPS++.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LoraTracker.dir/lib/TinyGPSPlus-master/src/TinyGPS++.cpp.o"
 	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LoraTracker.dir/lib/TinyGPSPlus-master/src/TinyGPS++.cpp.o -c "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TinyGPSPlus-master/src/TinyGPS++.cpp"
 
 CMakeFiles/LoraTracker.dir/lib/TinyGPSPlus-master/src/TinyGPS++.cpp.i: cmake_force
@@ -85,7 +189,7 @@ CMakeFiles/LoraTracker.dir/lib/TinyGPSPlus-master/src/TinyGPS++.cpp.s: cmake_for
 
 CMakeFiles/LoraTracker.dir/src/LoraTracker.cpp.o: CMakeFiles/LoraTracker.dir/flags.make
 CMakeFiles/LoraTracker.dir/src/LoraTracker.cpp.o: ../src/LoraTracker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LoraTracker.dir/src/LoraTracker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LoraTracker.dir/src/LoraTracker.cpp.o"
 	/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LoraTracker.dir/src/LoraTracker.cpp.o -c "/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/src/LoraTracker.cpp"
 
 CMakeFiles/LoraTracker.dir/src/LoraTracker.cpp.i: cmake_force
@@ -99,6 +203,14 @@ CMakeFiles/LoraTracker.dir/src/LoraTracker.cpp.s: cmake_force
 # Object files for target LoraTracker
 LoraTracker_OBJECTS = \
 "CMakeFiles/LoraTracker.dir/lib/LoRaWan/LoRaWan.cpp.o" \
+"CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.o" \
+"CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.o" \
+"CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.o" \
+"CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.o" \
+"CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.o" \
+"CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.o" \
+"CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.o" \
+"CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.o" \
 "CMakeFiles/LoraTracker.dir/lib/TinyGPSPlus-master/src/TinyGPS++.cpp.o" \
 "CMakeFiles/LoraTracker.dir/src/LoraTracker.cpp.o"
 
@@ -106,11 +218,19 @@ LoraTracker_OBJECTS = \
 LoraTracker_EXTERNAL_OBJECTS =
 
 LoraTracker: CMakeFiles/LoraTracker.dir/lib/LoRaWan/LoRaWan.cpp.o
+LoraTracker: CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.o
+LoraTracker: CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.o
+LoraTracker: CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.o
+LoraTracker: CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.o
+LoraTracker: CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.o
+LoraTracker: CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.o
+LoraTracker: CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.o
+LoraTracker: CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.o
 LoraTracker: CMakeFiles/LoraTracker.dir/lib/TinyGPSPlus-master/src/TinyGPS++.cpp.o
 LoraTracker: CMakeFiles/LoraTracker.dir/src/LoraTracker.cpp.o
 LoraTracker: CMakeFiles/LoraTracker.dir/build.make
 LoraTracker: CMakeFiles/LoraTracker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable LoraTracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable LoraTracker"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LoraTracker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,0 +1,226 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/_ansi.h
+newlib.h
+-
+sys/config.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/alloca.h
+_ansi.h
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/_ansi.h
+sys/reent.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/assert.h
+_ansi.h
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/_ansi.h
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/limits.h
+newlib.h
+-
+sys/config.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/machine/_default_types.h
+sys/features.h
+-
+limits.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/machine/_types.h
+machine/_default_types.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/machine/ansi.h
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/machine/ieeefp.h
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/machine/stdlib.h
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/machine/types.h
+machine/_types.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/newlib.h
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/stdint.h
+machine/_default_types.h
+-
+limits.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/stdlib.h
+machine/ieeefp.h
+-
+_ansi.h
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/_ansi.h
+stddef.h
+-
+sys/reent.h
+-
+machine/stdlib.h
+-
+alloca.h
+-
+cygwin/stdlib.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/string.h
+_ansi.h
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/_ansi.h
+sys/reent.h
+-
+sys/cdefs.h
+-
+sys/features.h
+-
+stddef.h
+-
+sys/string.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/sys/_types.h
+machine/_types.h
+-
+sys/lock.h
+-
+stddef.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/sys/cdefs.h
+machine/_default_types.h
+-
+sys/features.h
+-
+stddef.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/sys/config.h
+machine/ieeefp.h
+-
+sys/features.h
+-
+cygwin/config.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/sys/custom_file.h
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/sys/features.h
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/sys/lock.h
+_ansi.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/sys/reent.h
+_ansi.h
+-
+stddef.h
+-
+sys/_types.h
+-
+sys/types.h
+-
+sys/custom_file.h
+-
+assert.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/sys/sched.h
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/sys/string.h
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/sys/types.h
+_ansi.h
+-
+machine/_types.h
+-
+sys/_types.h
+-
+stddef.h
+-
+machine/types.h
+-
+sys/features.h
+-
+sys/sched.h
+-
+sys/cpuset.h
+-
+cygwin/types.h
+-
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/4.8.4/include/stdbool.h
+
+/Users/stephanbrunner/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/4.8.4/include/stddef.h
+machine/ansi.h
+-
+sys/_types.h
+-
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/appData.pb.c
+appData.pb.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/appData.pb.h
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/appData.pb.h
+pb.h
+-
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/deviceData.pb.c
+deviceData.pb.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/deviceData.pb.h
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/deviceData.pb.h
+pb.h
+-
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb.h
+stdint.h
+-
+stddef.h
+-
+stdbool.h
+-
+string.h
+-
+stdlib.h
+-
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_common.c
+pb_common.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_common.h
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_common.h
+pb.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb.h
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_decode.c
+pb.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb.h
+pb_decode.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_decode.h
+pb_common.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_common.h
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_decode.h
+pb.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb.h
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_encode.c
+pb.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb.h
+pb_encode.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_encode.h
+pb_common.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_common.h
+
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb_encode.h
+pb.h
+/Users/stephanbrunner/Documents/1_Projekte/Software Devlopement/LoraTracker/lib/TheThingsNetwork/src/pb.h
+

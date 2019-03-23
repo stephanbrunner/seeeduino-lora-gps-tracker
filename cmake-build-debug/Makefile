@@ -280,6 +280,222 @@ lib/LoRaWan/LoRaWan.cpp.s:
 	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/LoRaWan/LoRaWan.cpp.s
 .PHONY : lib/LoRaWan/LoRaWan.cpp.s
 
+lib/TheThingsNetwork/src/CayenneLPP.o: lib/TheThingsNetwork/src/CayenneLPP.cpp.o
+
+.PHONY : lib/TheThingsNetwork/src/CayenneLPP.o
+
+# target to build an object file
+lib/TheThingsNetwork/src/CayenneLPP.cpp.o:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.o
+.PHONY : lib/TheThingsNetwork/src/CayenneLPP.cpp.o
+
+lib/TheThingsNetwork/src/CayenneLPP.i: lib/TheThingsNetwork/src/CayenneLPP.cpp.i
+
+.PHONY : lib/TheThingsNetwork/src/CayenneLPP.i
+
+# target to preprocess a source file
+lib/TheThingsNetwork/src/CayenneLPP.cpp.i:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.i
+.PHONY : lib/TheThingsNetwork/src/CayenneLPP.cpp.i
+
+lib/TheThingsNetwork/src/CayenneLPP.s: lib/TheThingsNetwork/src/CayenneLPP.cpp.s
+
+.PHONY : lib/TheThingsNetwork/src/CayenneLPP.s
+
+# target to generate assembly for a file
+lib/TheThingsNetwork/src/CayenneLPP.cpp.s:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/CayenneLPP.cpp.s
+.PHONY : lib/TheThingsNetwork/src/CayenneLPP.cpp.s
+
+lib/TheThingsNetwork/src/TheThingsMessage.o: lib/TheThingsNetwork/src/TheThingsMessage.cpp.o
+
+.PHONY : lib/TheThingsNetwork/src/TheThingsMessage.o
+
+# target to build an object file
+lib/TheThingsNetwork/src/TheThingsMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.o
+.PHONY : lib/TheThingsNetwork/src/TheThingsMessage.cpp.o
+
+lib/TheThingsNetwork/src/TheThingsMessage.i: lib/TheThingsNetwork/src/TheThingsMessage.cpp.i
+
+.PHONY : lib/TheThingsNetwork/src/TheThingsMessage.i
+
+# target to preprocess a source file
+lib/TheThingsNetwork/src/TheThingsMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.i
+.PHONY : lib/TheThingsNetwork/src/TheThingsMessage.cpp.i
+
+lib/TheThingsNetwork/src/TheThingsMessage.s: lib/TheThingsNetwork/src/TheThingsMessage.cpp.s
+
+.PHONY : lib/TheThingsNetwork/src/TheThingsMessage.s
+
+# target to generate assembly for a file
+lib/TheThingsNetwork/src/TheThingsMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsMessage.cpp.s
+.PHONY : lib/TheThingsNetwork/src/TheThingsMessage.cpp.s
+
+lib/TheThingsNetwork/src/TheThingsNetwork.o: lib/TheThingsNetwork/src/TheThingsNetwork.cpp.o
+
+.PHONY : lib/TheThingsNetwork/src/TheThingsNetwork.o
+
+# target to build an object file
+lib/TheThingsNetwork/src/TheThingsNetwork.cpp.o:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.o
+.PHONY : lib/TheThingsNetwork/src/TheThingsNetwork.cpp.o
+
+lib/TheThingsNetwork/src/TheThingsNetwork.i: lib/TheThingsNetwork/src/TheThingsNetwork.cpp.i
+
+.PHONY : lib/TheThingsNetwork/src/TheThingsNetwork.i
+
+# target to preprocess a source file
+lib/TheThingsNetwork/src/TheThingsNetwork.cpp.i:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.i
+.PHONY : lib/TheThingsNetwork/src/TheThingsNetwork.cpp.i
+
+lib/TheThingsNetwork/src/TheThingsNetwork.s: lib/TheThingsNetwork/src/TheThingsNetwork.cpp.s
+
+.PHONY : lib/TheThingsNetwork/src/TheThingsNetwork.s
+
+# target to generate assembly for a file
+lib/TheThingsNetwork/src/TheThingsNetwork.cpp.s:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/TheThingsNetwork.cpp.s
+.PHONY : lib/TheThingsNetwork/src/TheThingsNetwork.cpp.s
+
+lib/TheThingsNetwork/src/appData.pb.o: lib/TheThingsNetwork/src/appData.pb.c.o
+
+.PHONY : lib/TheThingsNetwork/src/appData.pb.o
+
+# target to build an object file
+lib/TheThingsNetwork/src/appData.pb.c.o:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.o
+.PHONY : lib/TheThingsNetwork/src/appData.pb.c.o
+
+lib/TheThingsNetwork/src/appData.pb.i: lib/TheThingsNetwork/src/appData.pb.c.i
+
+.PHONY : lib/TheThingsNetwork/src/appData.pb.i
+
+# target to preprocess a source file
+lib/TheThingsNetwork/src/appData.pb.c.i:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.i
+.PHONY : lib/TheThingsNetwork/src/appData.pb.c.i
+
+lib/TheThingsNetwork/src/appData.pb.s: lib/TheThingsNetwork/src/appData.pb.c.s
+
+.PHONY : lib/TheThingsNetwork/src/appData.pb.s
+
+# target to generate assembly for a file
+lib/TheThingsNetwork/src/appData.pb.c.s:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/appData.pb.c.s
+.PHONY : lib/TheThingsNetwork/src/appData.pb.c.s
+
+lib/TheThingsNetwork/src/deviceData.pb.o: lib/TheThingsNetwork/src/deviceData.pb.c.o
+
+.PHONY : lib/TheThingsNetwork/src/deviceData.pb.o
+
+# target to build an object file
+lib/TheThingsNetwork/src/deviceData.pb.c.o:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.o
+.PHONY : lib/TheThingsNetwork/src/deviceData.pb.c.o
+
+lib/TheThingsNetwork/src/deviceData.pb.i: lib/TheThingsNetwork/src/deviceData.pb.c.i
+
+.PHONY : lib/TheThingsNetwork/src/deviceData.pb.i
+
+# target to preprocess a source file
+lib/TheThingsNetwork/src/deviceData.pb.c.i:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.i
+.PHONY : lib/TheThingsNetwork/src/deviceData.pb.c.i
+
+lib/TheThingsNetwork/src/deviceData.pb.s: lib/TheThingsNetwork/src/deviceData.pb.c.s
+
+.PHONY : lib/TheThingsNetwork/src/deviceData.pb.s
+
+# target to generate assembly for a file
+lib/TheThingsNetwork/src/deviceData.pb.c.s:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/deviceData.pb.c.s
+.PHONY : lib/TheThingsNetwork/src/deviceData.pb.c.s
+
+lib/TheThingsNetwork/src/pb_common.o: lib/TheThingsNetwork/src/pb_common.c.o
+
+.PHONY : lib/TheThingsNetwork/src/pb_common.o
+
+# target to build an object file
+lib/TheThingsNetwork/src/pb_common.c.o:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.o
+.PHONY : lib/TheThingsNetwork/src/pb_common.c.o
+
+lib/TheThingsNetwork/src/pb_common.i: lib/TheThingsNetwork/src/pb_common.c.i
+
+.PHONY : lib/TheThingsNetwork/src/pb_common.i
+
+# target to preprocess a source file
+lib/TheThingsNetwork/src/pb_common.c.i:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.i
+.PHONY : lib/TheThingsNetwork/src/pb_common.c.i
+
+lib/TheThingsNetwork/src/pb_common.s: lib/TheThingsNetwork/src/pb_common.c.s
+
+.PHONY : lib/TheThingsNetwork/src/pb_common.s
+
+# target to generate assembly for a file
+lib/TheThingsNetwork/src/pb_common.c.s:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_common.c.s
+.PHONY : lib/TheThingsNetwork/src/pb_common.c.s
+
+lib/TheThingsNetwork/src/pb_decode.o: lib/TheThingsNetwork/src/pb_decode.c.o
+
+.PHONY : lib/TheThingsNetwork/src/pb_decode.o
+
+# target to build an object file
+lib/TheThingsNetwork/src/pb_decode.c.o:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.o
+.PHONY : lib/TheThingsNetwork/src/pb_decode.c.o
+
+lib/TheThingsNetwork/src/pb_decode.i: lib/TheThingsNetwork/src/pb_decode.c.i
+
+.PHONY : lib/TheThingsNetwork/src/pb_decode.i
+
+# target to preprocess a source file
+lib/TheThingsNetwork/src/pb_decode.c.i:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.i
+.PHONY : lib/TheThingsNetwork/src/pb_decode.c.i
+
+lib/TheThingsNetwork/src/pb_decode.s: lib/TheThingsNetwork/src/pb_decode.c.s
+
+.PHONY : lib/TheThingsNetwork/src/pb_decode.s
+
+# target to generate assembly for a file
+lib/TheThingsNetwork/src/pb_decode.c.s:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_decode.c.s
+.PHONY : lib/TheThingsNetwork/src/pb_decode.c.s
+
+lib/TheThingsNetwork/src/pb_encode.o: lib/TheThingsNetwork/src/pb_encode.c.o
+
+.PHONY : lib/TheThingsNetwork/src/pb_encode.o
+
+# target to build an object file
+lib/TheThingsNetwork/src/pb_encode.c.o:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.o
+.PHONY : lib/TheThingsNetwork/src/pb_encode.c.o
+
+lib/TheThingsNetwork/src/pb_encode.i: lib/TheThingsNetwork/src/pb_encode.c.i
+
+.PHONY : lib/TheThingsNetwork/src/pb_encode.i
+
+# target to preprocess a source file
+lib/TheThingsNetwork/src/pb_encode.c.i:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.i
+.PHONY : lib/TheThingsNetwork/src/pb_encode.c.i
+
+lib/TheThingsNetwork/src/pb_encode.s: lib/TheThingsNetwork/src/pb_encode.c.s
+
+.PHONY : lib/TheThingsNetwork/src/pb_encode.s
+
+# target to generate assembly for a file
+lib/TheThingsNetwork/src/pb_encode.c.s:
+	$(MAKE) -f CMakeFiles/LoraTracker.dir/build.make CMakeFiles/LoraTracker.dir/lib/TheThingsNetwork/src/pb_encode.c.s
+.PHONY : lib/TheThingsNetwork/src/pb_encode.c.s
+
 lib/TinyGPSPlus-master/src/TinyGPS++.o: lib/TinyGPSPlus-master/src/TinyGPS++.cpp.o
 
 .PHONY : lib/TinyGPSPlus-master/src/TinyGPS++.o
@@ -356,6 +572,30 @@ help:
 	@echo "... lib/LoRaWan/LoRaWan.o"
 	@echo "... lib/LoRaWan/LoRaWan.i"
 	@echo "... lib/LoRaWan/LoRaWan.s"
+	@echo "... lib/TheThingsNetwork/src/CayenneLPP.o"
+	@echo "... lib/TheThingsNetwork/src/CayenneLPP.i"
+	@echo "... lib/TheThingsNetwork/src/CayenneLPP.s"
+	@echo "... lib/TheThingsNetwork/src/TheThingsMessage.o"
+	@echo "... lib/TheThingsNetwork/src/TheThingsMessage.i"
+	@echo "... lib/TheThingsNetwork/src/TheThingsMessage.s"
+	@echo "... lib/TheThingsNetwork/src/TheThingsNetwork.o"
+	@echo "... lib/TheThingsNetwork/src/TheThingsNetwork.i"
+	@echo "... lib/TheThingsNetwork/src/TheThingsNetwork.s"
+	@echo "... lib/TheThingsNetwork/src/appData.pb.o"
+	@echo "... lib/TheThingsNetwork/src/appData.pb.i"
+	@echo "... lib/TheThingsNetwork/src/appData.pb.s"
+	@echo "... lib/TheThingsNetwork/src/deviceData.pb.o"
+	@echo "... lib/TheThingsNetwork/src/deviceData.pb.i"
+	@echo "... lib/TheThingsNetwork/src/deviceData.pb.s"
+	@echo "... lib/TheThingsNetwork/src/pb_common.o"
+	@echo "... lib/TheThingsNetwork/src/pb_common.i"
+	@echo "... lib/TheThingsNetwork/src/pb_common.s"
+	@echo "... lib/TheThingsNetwork/src/pb_decode.o"
+	@echo "... lib/TheThingsNetwork/src/pb_decode.i"
+	@echo "... lib/TheThingsNetwork/src/pb_decode.s"
+	@echo "... lib/TheThingsNetwork/src/pb_encode.o"
+	@echo "... lib/TheThingsNetwork/src/pb_encode.i"
+	@echo "... lib/TheThingsNetwork/src/pb_encode.s"
 	@echo "... lib/TinyGPSPlus-master/src/TinyGPS++.o"
 	@echo "... lib/TinyGPSPlus-master/src/TinyGPS++.i"
 	@echo "... lib/TinyGPSPlus-master/src/TinyGPS++.s"
