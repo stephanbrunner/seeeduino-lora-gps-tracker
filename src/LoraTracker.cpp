@@ -8,8 +8,9 @@ char* APP_EUI = (char *) "70B3D57ED00198B1";
 char* APP_KEY = (char *) "F557758A8F658A9C80C0932C1F878D38";
 
 // settings
-const uint32_t UPDATE_INTERVAL = 120000; // ms
-const uint16_t GPS_WATCHDOG = 10000; // ms
+const uint32_t UPDATE_INTERVAL = 60000; // ms
+const uint16_t GPS_WATCHDOG = 60000; // ms
+const boolean GPS_POWER_SAVE_CYCLUS = false;
 
 enum {
     LOCATION_UPDATED,
@@ -98,13 +99,13 @@ const float EU_hybrid_channels[8] = {868.1, 868.3, 868.5, 867.1, 867.3, 867.5, 8
 //vars
 unsigned char frame_counter = 1;
 //int loopcount = 0;
-char buffer[256];
 TinyGPSPlus gps;
 uint32_t gps_alive_timestamp;
 uint16_t allUpdated = 0;
 boolean gps_enabled = false;
 boolean gps_enabled_target_state = true;
 CayenneLPP lpp(51);
+uint32_t loraUpdateTimestamp;
 
 void displayInfo() {
     if (gps.location.isUpdated()) {
@@ -196,23 +197,10 @@ void setHybridForTTN(const float *channels) {
     }
 }
 
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "OCUnusedGlobalDeclarationInspection"
-void setup(void) {
-    SerialUSB.begin(115200);
-    while (!SerialUSB && millis() < 10000);
-    SerialUSB.println("seeeduino is up...");
-
-    // setup GPS
-    Serial.begin(9600);     // open the GPS
-    gps_alive_timestamp = millis();
-    // TODO maybe set Fitness power mode PMTK262
-
-    //setup lora
-    lora.init();
-//    lora.setDeviceDefault();
+void resetLora() {
     lora.setDeviceReset();
 
+    char buffer[256];
     memset(buffer, 0, 256);
     lora.getVersion(buffer, 256, 1);
     SerialUSB.print(buffer);
@@ -225,7 +213,7 @@ void setup(void) {
     SerialUSB.print(buffer);
 
     lora.setDeciveMode(LWOTAA);
-    lora.setDataRate(DR5, EU868);
+    lora.setDataRate(DR0, EU868);
     lora.setAdaptiveDataRate(true);
     setHybridForTTN(EU_hybrid_channels);
 
@@ -235,22 +223,138 @@ void setup(void) {
     lora.setDutyCycle(false);
     lora.setJoinDutyCycle(false);
     lora.setPower(14);
+}
 
-//    SerialUSB.print("Starting OTTA Join.\n");
-//    loopcount = 0;
-//    while (!lora.setOTAAJoin(JOIN)) {
-//        loopcount++;
-//    }
-//    SerialUSB.print("Took ");
-//    SerialUSB.print(loopcount);
-//    SerialUSB.println(" tries to join.");
+void factoryResetLora() {
+    lora.setDeviceDefault();
+    resetLora();
+}
+
+boolean sendLora(unsigned char* payload, unsigned char length, char* downlink, size_t size) {
+    bool result = lora.transferPacket(payload, length, DEFAULT_RESPONSE_TIMEOUT);
+
+    // see if there was a downlink
+    if (result) {
+        delay(50);
+        frame_counter++;
+        short rssi;
+
+        memset(downlink, 0, size);
+
+        short rx_length;
+        rx_length = (unsigned char) lora.receivePacket(downlink, (short) size, &rssi);
+
+        if (rx_length) {
+            SerialUSB.print("Length is: ");
+            SerialUSB.println(length);
+            SerialUSB.print("RSSI is: ");
+            SerialUSB.println(rssi);
+            SerialUSB.print("Data is: ");
+            for (unsigned char i = 0; i < length; i++) {
+                SerialUSB.print("0x");
+                SerialUSB.print(downlink[i], HEX);
+                SerialUSB.print(" ");
+            }
+            SerialUSB.println();
+        }
+    }
+}
+
+boolean sendBatteryStatus(char* downlink, size_t size) {
+    lpp.reset();
+    lpp.addAnalogInput(0, lora.getBatteryVoltage());
+    return sendLora(lpp.getBuffer(), lpp.getSize(), downlink, size);
+}
+
+boolean sendGpsPosition(char* downlink, size_t size) {
+    lpp.reset();
+    lpp.addGPS(1,
+               (float) gps.location.lat(),
+               (float) gps.location.lng(),
+               (float) gps.altitude.meters());
+    return sendLora(lpp.getBuffer(), lpp.getSize(), downlink, size);
+}
+
+void handleCommand(char* buffer, short length) {
+    if (buffer[0] == 'f') {
+        // lora factory reset
+        SerialUSB.println("Lora factory reset.");
+        factoryResetLora();
+    } else if (buffer[0] == 'r') {
+        SerialUSB.println("Lora reset.");
+        resetLora();
+    } else if (buffer[0] == 'j') {
+        SerialUSB.println("Lora join.");
+        lora.setOTAAJoin(JOIN);
+    } else if (buffer[0] == 'g') {
+        SerialUSB.println("Sending GPS position.");
+        char downlink_buffer[256];
+        memset(downlink_buffer, 0, 256);
+        sendGpsPosition(downlink_buffer, 256);
+    }
+}
+
+uint8_t checksum(uint8_t* packet, uint16_t packet_len) {
+    uint8_t result = 0;
+    for ( int i = 0 ; i < packet_len ; i ++ ) {
+        result = result ^ packet[i];
+    }
+    return result;
+}
+
+uint8_t hexDigitToChar(uint8_t hex) {
+    if (hex < 10) {
+        return 30 + hex;
+    } else if (hex == 10) {
+        return 'A';
+    } else if (hex == 11) {
+        return 'B';
+    } else if (hex == 12) {
+        return 'C';
+    } else if (hex == 13) {
+        return 'D';
+    } else if (hex == 14) {
+        return 'E';
+    } else if (hex == 15) {
+        return 'F';
+    }
+}
+
+void chacksumAsChar(uint8_t* packet, uint16_t packet_len, char* result) {
+    uint8_t asInt = checksum(packet, packet_len);
+    uint8_t l = asInt >> 4;
+    uint8_t r = (uint8_t) (asInt % 16);
+    result[0] = hexDigitToChar(l);
+    result[1] = hexDigitToChar(r);
+}
+
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "OCUnusedGlobalDeclarationInspection"
+void setup(void) {
+    SerialUSB.begin(115200);
+    while (!SerialUSB && millis() < 10000);
+    SerialUSB.println("seeeduino is up...");
+
+    // setup GPS
+    Serial.begin(9600);     // open the GPS
+    gps_alive_timestamp = millis();
+    delay(1000);
+//    Serial.print("$PMTK220,1000*1F\r\n");
+    Serial.print("$PMTK220,10000*2F\r\n");
+//    Serial.print("$PMTK220,60000*18\r\n");
+//    Serial.print(GPS_COMMAD_HOT_START);
+    // TODO maybe set Fitness power mode PMTK262
+
+    //setup lora
+    lora.init();
+    lora.setOTAAJoin(JOIN);
 }
 
 void loop(void) {
     // TODO handle invalid data
     // TODO handel case, when gps doesn't find no satellites
     // get chars from GPS and process them in TinyGPSPlus
-    while (Serial.available() > 0) {
+    if (Serial.available() > 0) {
         char c = (char) Serial.read();
         gps.encode(c);
         gps_alive_timestamp = millis();
@@ -260,74 +364,70 @@ void loop(void) {
     // if some updates available, print them
     displayInfo();
 
-    if (millis() > gps_alive_timestamp + UPDATE_INTERVAL && !gps_enabled && !gps_enabled_target_state) {
-        SerialUSB.println("Waking GPS up.");
-        // start gps module
-        Serial.print(GPS_COMMAD_HOT_START);
-        gps_enabled_target_state = true;
-    }
+//    if (millis() > gps_alive_timestamp + UPDATE_INTERVAL && !gps_enabled && !gps_enabled_target_state) {
+//        SerialUSB.println("Waking GPS up.");
+//        // start gps module
+//        Serial.print(GPS_COMMAD_HOT_START);
+//        gps_enabled_target_state = true;
+//    }
+//
+//    // if gps should be up, but didn't wake up, try again
+//    if (millis() > gps_alive_timestamp + GPS_WATCHDOG && !gps_enabled && gps_enabled_target_state) {
+//        SerialUSB.println("Trying to wake up gps again...");
+//        Serial.print(GPS_COMMAD_HOT_START);
+//        gps_alive_timestamp = millis();
+//    }
 
-    // if gps should be up, but didn't wake up, try again
-    if (millis() > gps_alive_timestamp + GPS_WATCHDOG && !gps_enabled && gps_enabled_target_state) {
-        SerialUSB.println("Trying to wake up gps again...");
-        Serial.print(GPS_COMMAD_HOT_START);
-        gps_alive_timestamp = millis();
-    }
+    // gps watchdog
 
-    if (allUpdated == 0x00FF && SerialUSB.read() == 'u') {
+//    if (allUpdated == 0x00FF && GPS_POWER_SAVE_CYCLUS) {
         // send all data to ttn
-        while (!lora.setOTAAJoin(JOIN));
-//        lpp.reset()mmmmmmmmmm;
+//        while (!lora.setOTAAJoin(JOIN));
+//        lpp.reset();
 //        lpp.addGPS((uint8_t) gps.satellites.value(), (float) gps.location.lat(), (float) gps.location.lng(),
 //                   (float) gps.altitude.meters());
-        auto lat_raw = (uint32_t)((float)gps.location.lat() * 10000);
-        auto lng_raw = (uint32_t)((float)gps.location.lng() * 10000);
-        char payload[8];
-        payload[0] = (char) (lat_raw >> 24);
-        payload[1] = (char) (lat_raw >> 16);
-        payload[2] = (char) (lat_raw >> 8);
-        payload[3] = (char) lat_raw;
-        payload[4] = (char) (lng_raw >> 24);
-        payload[5] = (char) (lng_raw >> 16);
-        payload[6] = (char) (lng_raw >> 8);
-        payload[7] = (char) lng_raw;
-        bool result = lora.transferPacket(lpp.getBuffer(), lpp.getSize(), DEFAULT_RESPONSE_TIMEOUT);
 
-        // see if there was a downlink
-        if (result) {
-            delay(50);
-            frame_counter++;
-            short length;
-            short rssi;
-
-            memset(buffer, 0, 256);
-            length = lora.receivePacket(buffer, 256, &rssi);
-
-            if (length) {
-                SerialUSB.print("Length is: ");
-                SerialUSB.println(length);
-                SerialUSB.print("RSSI is: ");
-                SerialUSB.println(rssi);
-                SerialUSB.print("Data is: ");
-                for (unsigned char i = 0; i < length; i++) {
-                    SerialUSB.print("0x");
-                    SerialUSB.print(buffer[i], HEX);
-                    SerialUSB.print(" ");
-                }
-                SerialUSB.println();
-            }
-        }
 
         // send gps to sleep
-        SerialUSB.println("Sending GPS to sleep.");
-        Serial.print(GPS_COMMAND_STANDBY);
-        gps_enabled_target_state = false;
+//        SerialUSB.println("Sending GPS to sleep.");
+//        Serial.print(GPS_COMMAND_STANDBY);
+//        gps_enabled_target_state = false;
+//
+//        // reset flags here already, to avoid executing this while GPS is in standby
+//        allUpdated = 0;
+//    }
 
-        // reset flags here already, to avoid executing this while GPS is in standby
-        allUpdated = 0;
+    // regularly check in TNN to see if there are some messages
+    if (millis() > loraUpdateTimestamp + UPDATE_INTERVAL) {
+        SerialUSB.println("Sending gps position to TNN.");
+//        auto sat = (uint8_t) gps.satellites.value();
+//        char buffer[256];
+//        memset(buffer, 0, 256);
+//        if (sendLora(&sat, 1, buffer, 256)) {
+//            handleCommand(buffer, 256);
+//        }
+        char buffer[256];
+        memset(buffer, 0, 256);
+        if(sendGpsPosition(buffer, 256)) {
+            handleCommand(buffer, 256);
+        }
+        if(sendBatteryStatus(buffer, 256)) {
+            handleCommand(buffer, 256);
+        }
+        loraUpdateTimestamp = millis();
     }
 
     // print debug infos from lora chip
+
+    if (SerialUSB.available()) {
+        char c[1];
+        c[0] = (char) SerialUSB.read();
+        SerialUSB.print("Received from USB: ");
+        SerialUSB.println(c[0]);
+        handleCommand(c, 1);
+    }
+
+    // look for debug messages from lora
     lora.loraDebug();
 }
 #pragma clang diagnostic pop
